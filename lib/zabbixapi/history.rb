@@ -22,7 +22,7 @@ module Zabbix
         'limit' => 10000
       }
       
-      merge_opt(defaults, options)
+      params = merge_opt(defaults, options)
       
       message = {
         'method' => 'history.get',
