@@ -26,9 +26,7 @@ module Zabbix
       
       message = {
         'method' => 'history.get',
-        'params' => {
-          params
-        }
+        'params' => params
       }
 
       response = send_request(message)
